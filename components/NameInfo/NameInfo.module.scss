@@ -21,7 +21,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  //margin: 20px 0;
   @media (max-width: grid.$media-phone) {
     display: block;
   }
@@ -32,9 +31,7 @@
   margin: 0 auto;
   border-radius: 50%;
   overflow: hidden;
-  img {
-    border-radius: 50%;
-  }
+  display: flex;
 }
 
 .textCenter {

@@ -5,12 +5,26 @@ import {
   faLink,
   faLocationDot,
   faPhone,
+  faCopy,
+  faCheck,
 } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
+import { useState } from 'react'
 
 export function ContactsSection() {
   const { t } = useTranslation()
+  const [isCoppied, setIsCoppied] = useState<boolean>(false)
+
+  const handleClick = () => {
+    setIsCoppied(true)
+    navigator.clipboard.writeText(' kyrova.nastia@gmail.com')
+
+    const TimerId = setTimeout(() => {
+      setIsCoppied(false)
+      clearTimeout(TimerId)
+    }, 3000)
+  }
 
   return (
     <>
@@ -26,6 +40,15 @@ export function ContactsSection() {
             kyrova.nastia@gmail.com
           </a>
         </Link>
+        {isCoppied ? (
+          <FontAwesomeIcon icon={faCheck} className={styles.contactCopyIco} />
+        ) : (
+          <FontAwesomeIcon
+            icon={faCopy}
+            onClick={handleClick}
+            className={styles.contactCopyIco}
+          />
+        )}
       </div>
 
       <div className={styles.contact}>
