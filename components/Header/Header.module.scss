@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 64px;
+  background: white;
+  box-shadow: 0 0 8px 1px rgb(0 0 0 / 20%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  transition: border-color 0.4s ease;
+  padding-bottom: 3px;
+  margin-bottom: -4px;
+  border-bottom: 1px solid white;
+  &:hover {
+    border-bottom: 1px solid black;
+  }
+}
+
+.linkDef {
+  padding: 0 8px;
+}

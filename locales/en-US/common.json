@@ -1,3 +1,26 @@
 {
-  "greetings": "Hello locale"
+  "greetings": "Hello locale",
+  "name": "Anastasia Kurova",
+  "profession": "Frontend-developer",
+  "nameInfoHeader": "Common information",
+  "about": "I am a Frontend-developer with more than 4 years of experience, live in Tbilisi now. I enjoy developing beautiful and convenient web interfaces, be a part of the developing process and see results of my work. I am interested in new technologies and how to use them. I worked on an AngularJs project with Node.js backend, then I refactored it to a React application. I developed projects from start and wrote libs for them. Worked with IndexedDB. Wrote unit and component tests. I think it is important to write understandable and simple code. Also, marked up websites and landings.\nMy main stack: React, TypeScript, Redux, CSS, HTML, Node.js\nI am searching for a remote work with possibility of relocation to other countries.",
+  "place": "Tbilisi, Georgia",
+  "work": {
+    "koshelek": {
+      "profession": "",
+      "date": "",
+      "time": "",
+      "duty": [
+        "Creation, development, engineering of web applications",
+        "Creation, development, engineering of web libs",
+        "Work with backend on Nodejs",
+        "Refactor old code to React",
+        "Write unit tests",
+        "Support for the codebase of projects",
+        "Write deployment scripts for Rundeck",
+        "Markup and development of landing pages and websites",
+        "E-mails markup"
+      ]
+    }
+  }
 }

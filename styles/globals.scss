@@ -1,3 +1,5 @@
+@use './grid';
+
 html,
 body {
   padding: 0;
@@ -21,5 +23,15 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+.container {
+  padding: 0 15px;
+  margin: 0 400px;
+  @media (max-width: grid.$media-notebook) {
+    margin: 0 200px;
+  }
+  @media (max-width: grid.$media-pre-notebook) {
+    margin: 0;
   }
 }

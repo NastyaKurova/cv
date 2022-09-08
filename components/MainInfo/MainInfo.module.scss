@@ -1,0 +1,28 @@
+@use '../../styles/grid';
+
+.contactsBlock {
+  width: 40%;
+
+  @media (max-width: grid.$media-phone) {
+    width: 100%;
+  }
+}
+
+.infoBlock {
+  width: 60%;
+
+  @media (max-width: grid.$media-phone) {
+    width: 100%;
+  }
+}
+
+.section {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //margin: 20px 0;
+  @media (max-width: grid.$media-phone) {
+    display: block;
+  }
+}

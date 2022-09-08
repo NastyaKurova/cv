@@ -1,0 +1,45 @@
+@use '../../styles/grid';
+
+.photoBlock {
+  width: 40%;
+
+  @media (max-width: grid.$media-phone) {
+    width: 100%;
+  }
+}
+
+.nameBlock {
+  width: 60%;
+
+  @media (max-width: grid.$media-phone) {
+    width: 100%;
+  }
+}
+
+.section {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //margin: 20px 0;
+  @media (max-width: grid.$media-phone) {
+    display: block;
+  }
+}
+
+.photo {
+  width: 50%;
+  margin: 0 auto;
+
+  img {
+    border-radius: 100%;
+  }
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.aboutMe {
+  padding-top: 16px;
+}
