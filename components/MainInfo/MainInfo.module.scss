@@ -19,10 +19,12 @@
 .section {
   margin: 20px 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   //margin: 20px 0;
   @media (max-width: grid.$media-phone) {
     display: block;
   }
+}
+.aboutMeHeader {
+  margin: 0 0 16px 0;
 }

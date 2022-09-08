@@ -3,24 +3,51 @@
   "name": "Anastasia Kurova",
   "profession": "Frontend-developer",
   "nameInfoHeader": "Common information",
-  "about": "I am a Frontend-developer with more than 4 years of experience, live in Tbilisi now. I enjoy developing beautiful and convenient web interfaces, be a part of the developing process and see results of my work. I am interested in new technologies and how to use them. I worked on an AngularJs project with Node.js backend, then I refactored it to a React application. I developed projects from start and wrote libs for them. Worked with IndexedDB. Wrote unit and component tests. I think it is important to write understandable and simple code. Also, marked up websites and landings.\nMy main stack: React, TypeScript, Redux, CSS, HTML, Node.js\nI am searching for a remote work with possibility of relocation to other countries.",
+  "about": "I am a Frontend-developer with more than 4 years of experience. I enjoy developing beautiful and convenient web interfaces, be a part of the developing process and see results of my work. I am interested in new technologies and how to use them. I worked on an AngularJs project with Node.js backend, then I refactored it to a React application. I developed projects from start and wrote libs for them. Worked with IndexedDB. Wrote unit and component tests. I think it is important to write understandable and simple code. Also, marked up websites and landings.\nMy main stack: JavaScript, TypeScript, React, Redux.\nI am searching for a remote work with possibility of relocation to other countries.",
   "place": "Tbilisi, Georgia",
-  "work": {
-    "koshelek": {
-      "profession": "",
-      "date": "",
-      "time": "",
-      "duty": [
-        "Creation, development, engineering of web applications",
-        "Creation, development, engineering of web libs",
-        "Work with backend on Nodejs",
-        "Refactor old code to React",
-        "Write unit tests",
-        "Support for the codebase of projects",
-        "Write deployment scripts for Rundeck",
-        "Markup and development of landing pages and websites",
-        "E-mails markup"
-      ]
-    }
-  }
+  "skillsHeader": "Basic skills",
+  "langHeader": "Languages",
+  "langEng": "English",
+  "langEngLevel": "intermediate",
+  "langRu": "Russian",
+  "langRuLevel": "native",
+  "experienceHeader": "Work experience",
+  "workKoshelekName": "Koshelek",
+  "workKoshelekProfession": "Web-developer",
+  "workKoshelekDate": "feb. 2018 y. - apr. 2022 y.",
+  "workKoshelekTime": "4 y. 3 m.",
+  "workKoshelekDuty1": "Creation, development, engineering of web applications",
+  "workKoshelekDuty2": "Creation, development, engineering of web libs",
+  "workKoshelekDuty3": "Work with backend on Nodejs",
+  "workKoshelekDuty4": "Refactor old code to React",
+  "workKoshelekDuty5": "Write unit tests",
+  "workKoshelekDuty6": "Support for the codebase of projects",
+  "workKoshelekDuty7": "Write deployment scripts for Rundeck",
+  "workKoshelekDuty8": "Markup and development of landing pages and websites",
+  "workKoshelekDuty9": "E-mails markup",
+
+  "workLBName": "Last.Backend",
+  "workLBProfession": "Web-developer",
+  "workLBDate": "okt. 2017 y. - feb. 2018 y.",
+  "workLBTime": "5 m.",
+  "workLBDuty": "Platform and landings markup",
+
+  "workWPName": "wa-pro",
+  "workWPProfession": "Web-developer",
+  "workWPDate": "feb. 2016 y. - may 2017 y.",
+  "workWPTime": " 1 y. 4 m.",
+  "workWPDuty": "Websites and online stores markup",
+
+  "EducationHeader": "Education",
+  "EducationTechUniM": "Saint Petersburg State University of Aerospace Instrumentation",
+  "EducationTechUniMProf": "Master's degree, Computer Technologies and Software Engineering",
+  "EducationTechUniMTime": "sept. 2018 г. - june 2020 г.",
+
+  "EducationTechUniBProf": "Bachelor degree, Computer Technologies and Software Engineering",
+  "EducationTechUniBTime": "sept. 2014 г. - june 2018 г.",
+  "EducationTechUniBDo": "Activity: trade union committee, speeches at scientific conferences",
+
+  "EducationLangUni": "Saint Petersburg State University of Architecture and Civil Engineering",
+  "EducationLangUniProf": "Interpreter professional activity",
+  "EducationLangUniTime": "sept. 2015 г. - june 2017 г."
 }
