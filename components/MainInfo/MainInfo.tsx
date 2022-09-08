@@ -16,7 +16,8 @@ export function MainInfo() {
           <KnowledgeSection />
         </div>
         <div className={styles.infoBlock}>
-          <div className={styles.aboutMe}>
+          <div className={cn(styles.aboutMe, 'position-relative')}>
+            <div className="border-dot"></div>
             <h3 className={styles.aboutMeHeader}>
               {t('common:nameInfoHeader')}
             </h3>

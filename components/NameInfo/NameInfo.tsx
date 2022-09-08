@@ -11,7 +11,7 @@ export function NameInfo() {
       <div className={styles.section}>
         <div className={styles.photoBlock}>
           <div className={styles.photo}>
-            <Image src={photo} placeholder="blur" />
+            <Image src={photo} placeholder="blur" alt="Photo of Nastya" />
           </div>
         </div>
         <div className={styles.nameBlock}>

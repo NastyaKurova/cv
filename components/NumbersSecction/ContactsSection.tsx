@@ -39,7 +39,7 @@ export function ContactsSection() {
 
       <div className={styles.contact}>
         <Link href="https://www.linkedin.com/in/anastasiya-kurova-758923242/">
-          <a>
+          <a target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLink} className={styles.contactIco} />
             LinkedIn
           </a>
@@ -48,7 +48,7 @@ export function ContactsSection() {
 
       <div className={styles.contact}>
         <Link href="https://t.me/a_kurova">
-          <a>
+          <a target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLink} className={styles.contactIco} />
             Telegram: @a_kurova
           </a>

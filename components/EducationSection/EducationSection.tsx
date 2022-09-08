@@ -31,12 +31,13 @@ export function EducationSection() {
   ]
 
   return (
-    <>
+    <div className="position-relative">
+      <div className="border-dot"></div>
       <h3>{t('common:EducationHeader')}</h3>
       {universities.map((university, index) => (
         <University key={index} university={university} />
       ))}
-    </>
+    </div>
   )
 }
 

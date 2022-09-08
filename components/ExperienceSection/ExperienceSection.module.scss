@@ -1,7 +1,9 @@
+@use '../../styles/colors';
+
 .date {
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.6);
+  color: colors.$color-gray-04;
   font-size: 14px;
 }
 .dateIco {

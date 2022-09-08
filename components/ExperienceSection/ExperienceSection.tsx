@@ -49,13 +49,14 @@ export function ExperienceSection() {
   ]
 
   return (
-    <>
+    <div className="position-relative">
+      <div className="border-dot"></div>
       <h3>{t('common:experienceHeader')}</h3>
 
       {companies.map((company: companyType, index: number) => (
         <Company key={index} company={company} />
       ))}
-    </>
+    </div>
   )
 }
 
