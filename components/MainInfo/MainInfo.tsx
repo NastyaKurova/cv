@@ -15,9 +15,9 @@ export function MainInfo() {
           <ContactsSection />
           <KnowledgeSection />
         </div>
-        <div className={styles.infoBlock}>
+        <div className={cn(styles.infoBlock, 'border-split')}>
           <div className={cn(styles.aboutMe, 'position-relative')}>
-            <div className="border-dot"></div>
+            <div className="border-dot border-dot-color"></div>
             <h3 className={styles.aboutMeHeader}>
               {t('common:nameInfoHeader')}
             </h3>

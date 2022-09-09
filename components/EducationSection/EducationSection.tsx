@@ -1,6 +1,8 @@
 import useTranslation from 'next-translate/useTranslation'
 import styles from './EducationSection.module.scss'
 import { FC } from 'react'
+import cn from 'classnames'
+import { Date } from '../common/Date/Date'
 
 type university = {
   name: string
@@ -32,7 +34,7 @@ export function EducationSection() {
 
   return (
     <div className="position-relative">
-      <div className="border-dot"></div>
+      <div className="border-dot border-dot-color"></div>
       <h3>{t('common:EducationHeader')}</h3>
       {universities.map((university, index) => (
         <University key={index} university={university} />
@@ -46,7 +48,9 @@ const University: FC<{ university: university }> = ({ university }) => {
     <div>
       <h4 className={styles.universityHeader}>{university.name}</h4>
       <div>{university.profession}</div>
-      <div className={styles.universityDate}>{university.date}</div>
+      <div className={cn(styles.universityDate, 'date-color')}>
+        <Date date={university.date} />
+      </div>
       {university.activities ? <div>{university.activities}</div> : null}
     </div>
   )

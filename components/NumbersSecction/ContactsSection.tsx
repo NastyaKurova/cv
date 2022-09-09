@@ -10,7 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
-import { useState } from 'react'
+import { FC, useState } from 'react'
 
 export function ContactsSection() {
   const { t } = useTranslation()

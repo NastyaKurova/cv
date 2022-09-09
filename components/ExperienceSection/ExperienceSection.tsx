@@ -1,8 +1,8 @@
 import useTranslation from 'next-translate/useTranslation'
 import { FC } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import styles from './ExperienceSection.module.scss'
+import cn from 'classnames'
+import { Date } from '../common/Date/Date'
 
 type companyType = {
   profession: string
@@ -50,7 +50,7 @@ export function ExperienceSection() {
 
   return (
     <div className="position-relative">
-      <div className="border-dot"></div>
+      <div className="border-dot border-dot-color"></div>
       <h3>{t('common:experienceHeader')}</h3>
 
       {companies.map((company: companyType, index: number) => (
@@ -64,10 +64,8 @@ const Company: FC<{ company: companyType }> = ({ company }) => {
   return (
     <div>
       <h4 className={styles.companyHeader}>{company.name}</h4>
-      <div className={styles.date}>
-        <span>{company.date}</span>
-        <FontAwesomeIcon icon={faCircle} className={styles.dateIco} />
-        <span>{company.time}</span>
+      <div className={cn(styles.date, 'date-color')}>
+        <Date dateWithTime={{ date: company.date, time: company.time }} />
       </div>
       <ul>
         {company.duties.map((duty: string, index: number) => (

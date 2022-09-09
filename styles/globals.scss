@@ -52,6 +52,83 @@ a {
   border-radius: 100%;
 }
 
+.border-dot-color {
+  background: colors.$color-green-07;
+}
+
 h3 {
   margin: 20px 0;
+}
+
+.date-color {
+  color: colors.$color-gray-04;
+}
+
+.header-color {
+  background: white;
+}
+
+.link-active {
+  border-bottom: 1px solid black;
+  transition: border-color 0.4s ease;
+}
+
+.link-color {
+  border-bottom: 1px solid white;
+
+  &:hover {
+    border-bottom: 1px solid black;
+  }
+}
+
+.dark-theme {
+  background: colors.$color-main-dark;
+  color: wheat;
+
+  .date-color {
+    color: colors.$color-gray-05;
+  }
+
+  .border-dot-color {
+    background: colors.$color-pink-08;
+  }
+
+  .border-split {
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-image: linear-gradient(
+        180deg,
+        colors.$color-main-dark 29px,
+        colors.$color-pink-05 10px,
+        colors.$color-pink-08
+      )
+      1;
+    @media (max-width: grid.$media-phone) {
+      width: 100%;
+      border-image: linear-gradient(
+          180deg,
+          colors.$color-main-dark 16px,
+          colors.$color-pink-05 10px,
+          colors.$color-pink-08
+        )
+        1;
+    }
+  }
+
+  .header-color {
+    background: colors.$color-main-dark;
+  }
+
+  .link-active {
+    border-bottom: 1px solid wheat;
+    transition: border-color 0.4s ease;
+  }
+
+  .link-color {
+    border-bottom: 1px solid colors.$color-main-dark;
+
+    &:hover {
+      border-bottom: 1px solid wheat;
+    }
+  }
 }
