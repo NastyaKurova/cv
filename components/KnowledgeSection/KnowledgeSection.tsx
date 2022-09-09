@@ -1,7 +1,8 @@
 import styles from './KnowledgeSection.module.scss'
 import useTranslation from 'next-translate/useTranslation'
+import { FC } from 'react'
 
-export function KnowledgeSection() {
+export const KnowledgeSection: FC = () => {
   const { t } = useTranslation()
 
   return (
@@ -9,7 +10,7 @@ export function KnowledgeSection() {
       <div>
         <h3>{t('common:skillsHeader')}</h3>
         <div className={styles.knowledge}> TypeScript | JavaScript</div>
-        <div className={styles.knowledge}> React | Redux | Next</div>
+        <div className={styles.knowledge}> React | Redux | Nextjs</div>
         <div className={styles.knowledge}>Jest | React Testing Library</div>
         <div className={styles.knowledge}>HTML | CSS | SCSS | Less</div>
         <div className={styles.knowledge}>Nodejs | Express</div>

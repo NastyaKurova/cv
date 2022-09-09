@@ -12,7 +12,7 @@ type companyType = {
   duties: Array<string>
 }
 
-export function ExperienceSection() {
+export const ExperienceSection: FC = () => {
   const { t } = useTranslation()
   const companies: companyType[] = [
     {

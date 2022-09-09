@@ -12,7 +12,7 @@ import Link from 'next/link'
 import useTranslation from 'next-translate/useTranslation'
 import { FC, useState } from 'react'
 
-export function ContactsSection() {
+export const ContactsSection: FC = () => {
   const { t } = useTranslation()
   const [isCoppied, setIsCoppied] = useState<boolean>(false)
 

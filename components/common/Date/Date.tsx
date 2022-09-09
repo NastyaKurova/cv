@@ -1,13 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle } from '@fortawesome/free-solid-svg-icons'
 import styles from './Date.module.scss'
+import { FC } from 'react'
 
 type DateTYpe = {
   date?: string
   dateWithTime?: { date?: string; time: string }
 }
 
-export function Date({ date, dateWithTime }: DateTYpe) {
+export const Date: FC<DateTYpe> = ({ date, dateWithTime }) => {
   if (dateWithTime)
     return (
       <>

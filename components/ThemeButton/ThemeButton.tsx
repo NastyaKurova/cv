@@ -1,9 +1,9 @@
 import { ThemeContext, themes } from '../../context/ThemeContext'
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import styles from './ThemeButton.module.scss'
 import cn from 'classnames'
 
-export function ThemeButton() {
+export const ThemeButton: FC = () => {
   const [lightMode, setLightMode] = useState(true)
 
   type changeThemeType = (theme: string) => void
@@ -15,8 +15,9 @@ export function ThemeButton() {
     <div className={styles.themeButton}>
       <ThemeContext.Consumer>
         {({ changeTheme }) => (
-          <label className={styles.switch}>
+          <label className={styles.switch} htmlFor="cb-slider">
             <input
+              id="cb-slider"
               type="checkbox"
               onChange={() => onThemeChange(changeTheme)}
             />

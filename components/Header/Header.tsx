@@ -3,14 +3,15 @@ import styles from './Header.module.scss'
 import cn from 'classnames'
 import { useRouter } from 'next/router'
 import { ThemeButton } from '../ThemeButton/ThemeButton'
+import { FC } from 'react'
 
 const localeEng = 'en-US'
 const localeRu = 'ru-Ru'
 
-export function Header() {
+export const Header: FC = () => {
   const router = useRouter()
   return (
-    <header className={cn(styles.header, 'header-color')}>
+    <nav className={cn(styles.header, 'header-color')}>
       <div className={cn('container', styles.container)}>
         <ThemeButton />
         <Link href="/" locale="en-US">
@@ -33,6 +34,6 @@ export function Header() {
           </a>
         </Link>
       </div>
-    </header>
+    </nav>
   )
 }

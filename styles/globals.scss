@@ -5,7 +5,13 @@ html,
 body {
   padding: 0;
   margin: 0;
+
   font-family: 'Montserrat', sans-serif;
+}
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=fallback');
+  font-display: swap;
 }
 
 a {
@@ -56,8 +62,10 @@ a {
   background: colors.$color-green-07;
 }
 
-h3 {
+h3,
+h2 {
   margin: 20px 0;
+  font-size: 1.17em;
 }
 
 .date-color {

@@ -11,7 +11,7 @@ type university = {
   activities?: string
 }
 
-export function EducationSection() {
+export const EducationSection: FC = () => {
   const { t } = useTranslation()
   const universities: university[] = [
     {

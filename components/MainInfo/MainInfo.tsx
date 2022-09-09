@@ -1,12 +1,13 @@
 import useTranslation from 'next-translate/useTranslation'
 import styles from './MainInfo.module.scss'
 import cn from 'classnames'
-import { ContactsSection } from '../NumbersSecction/ContactsSection'
+import { ContactsSection } from '../ContactsSection/ContactsSection'
 import { KnowledgeSection } from '../KnowledgeSection/KnowledgeSection'
 import { ExperienceSection } from '../ExperienceSection/ExperienceSection'
 import { EducationSection } from '../EducationSection/EducationSection'
+import { FC } from 'react'
 
-export function MainInfo() {
+export const MainInfo: FC = () => {
   const { t } = useTranslation()
   return (
     <section className={cn('container')}>
