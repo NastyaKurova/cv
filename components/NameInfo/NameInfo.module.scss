@@ -3,7 +3,11 @@
 .photoBlock {
   width: 40%;
 
-  @media (max-width: grid.$media-phone) {
+  @media (max-width: grid.$media-tablet) {
+    width: 60%;
+    margin: 0 auto;
+  }
+  @media (max-width: grid.$media-pre-phone) {
     width: 100%;
   }
 }
@@ -11,7 +15,7 @@
 .nameBlock {
   width: 60%;
 
-  @media (max-width: grid.$media-phone) {
+  @media (max-width: grid.$media-tablet) {
     width: 100%;
   }
 }
@@ -21,8 +25,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: grid.$media-phone) {
+  @media (max-width: grid.$media-tablet) {
     display: block;
+  }
+  @media (max-width: grid.$media-pre-phone) {
+    margin: 20px 0 40px 0;
   }
 }
 
