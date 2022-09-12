@@ -8,11 +8,6 @@ body {
 
   font-family: 'Montserrat', sans-serif;
 }
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=fallback');
-  font-display: swap;
-}
 
 a {
   color: inherit;
@@ -91,11 +86,13 @@ h2 {
     border-bottom: 1px solid black;
   }
 }
+
 .slider-shadow {
   &:before {
     box-shadow: 0 0 5px 4px colors.$color-green-05;
   }
 }
+
 .dark-theme {
   background: colors.$color-main-dark;
   color: wheat;
@@ -146,6 +143,7 @@ h2 {
       border-bottom: 1px solid wheat;
     }
   }
+
   .slider-shadow {
     &:before {
       box-shadow: 0 0 5px 4px colors.$color-pink-08;
