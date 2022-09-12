@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
+          rel="stylesheet preload"
         />
       </Head>
 

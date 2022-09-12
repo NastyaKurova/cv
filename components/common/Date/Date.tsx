@@ -11,11 +11,11 @@ type DateTYpe = {
 export const Date: FC<DateTYpe> = ({ date, dateWithTime }) => {
   if (dateWithTime)
     return (
-      <>
+      <time dateTime={dateWithTime.date}>
         <span>{dateWithTime.date}</span>
         <FontAwesomeIcon icon={faCircle} className={styles.dateIco} />
         <span>{dateWithTime.time}</span>
-      </>
+      </time>
     )
   return <span>{date}</span>
 }

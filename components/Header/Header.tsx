@@ -11,7 +11,7 @@ const localeRu = 'ru-Ru'
 export const Header: FC = () => {
   const router = useRouter()
   return (
-    <nav className={cn(styles.header, 'header-color')}>
+    <header className={cn(styles.header, 'header-color')}>
       <div className={cn('container', styles.container)}>
         <ThemeButton />
         <Link href="/" locale="en-US">
@@ -34,6 +34,6 @@ export const Header: FC = () => {
           </a>
         </Link>
       </div>
-    </nav>
+    </header>
   )
 }

@@ -40,6 +40,9 @@ a {
     margin: 0 200px;
   }
   @media (max-width: grid.$media-pre-notebook) {
+    margin: 0 100px;
+  }
+  @media (max-width: grid.$media-tablet) {
     margin: 0;
   }
 }

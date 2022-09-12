@@ -5,8 +5,12 @@
   width: 40%;
   padding-right: 24px;
   margin-top: 20px;
+  @media (max-width: 1480px) and (min-width: grid.$media-notebook) {
+    padding-right: 0;
+  }
   @media (max-width: grid.$media-phone) {
     width: 100%;
+    padding-right: 0;
   }
 }
 
@@ -38,7 +42,6 @@
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
-  //margin: 20px 0;
   @media (max-width: grid.$media-phone) {
     display: block;
   }

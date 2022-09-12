@@ -28,12 +28,12 @@ export const ContactsSection: FC = () => {
 
   return (
     <>
-      <div className={styles.contact}>
+      <address className={styles.contact}>
         <FontAwesomeIcon icon={faLocationDot} className={styles.contactIco} />
         {t('common:place')}
-      </div>
+      </address>
 
-      <div className={styles.contact}>
+      <address className={styles.contact}>
         <Link href="mailto:kyrova.nastia@gmail.com">
           <a>
             <FontAwesomeIcon icon={faEnvelope} className={styles.contactIco} />
@@ -49,7 +49,7 @@ export const ContactsSection: FC = () => {
             className={styles.contactCopyIco}
           />
         )}
-      </div>
+      </address>
 
       <div className={styles.contact}>
         <Link href="tel:+995591224336">
