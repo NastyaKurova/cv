@@ -61,7 +61,7 @@ export const ContactsSection: FC = () => {
       </div>
 
       <div className={styles.contact}>
-        <Link href="https://www.linkedin.com/in/anastasiya-kurova-758923242/">
+        <Link href="https://www.linkedin.com/in/anastasia-kurova-758923242/">
           <a target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLink} className={styles.contactIco} />
             LinkedIn
