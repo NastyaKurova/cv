@@ -1,9 +1,8 @@
-@use '../../styles/colors';
-
 .universityHeader {
   margin-bottom: 8px;
 }
 .universityDate {
   font-size: 14px;
   padding: 4px 0;
+  color: var(--date-color);
 }

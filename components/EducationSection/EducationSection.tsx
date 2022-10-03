@@ -34,7 +34,7 @@ export const EducationSection: FC = () => {
 
   return (
     <div className="position-relative">
-      <div className="border-dot border-dot-color"></div>
+      <div className="border-dot"></div>
       <h3>{t('common:EducationHeader')}</h3>
       {universities.map((university, index) => (
         <University key={index} university={university} />
@@ -48,7 +48,7 @@ const University: FC<{ university: university }> = ({ university }) => {
     <div>
       <h4 className={styles.universityHeader}>{university.name}</h4>
       <div>{university.profession}</div>
-      <div className={cn(styles.universityDate, 'date-color')}>
+      <div className={styles.universityDate}>
         <Date date={university.date} />
       </div>
       {university.activities ? <div>{university.activities}</div> : null}

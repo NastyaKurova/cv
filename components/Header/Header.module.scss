@@ -6,6 +6,7 @@
   height: 64px;
   box-shadow: 0 0 8px 1px rgb(0 0 0 / 20%);
   z-index: 1;
+  background: var(--header-color);
 }
 
 .container {
@@ -27,4 +28,15 @@
 
 .linkDef {
   padding: 0 8px;
+}
+.linkActive {
+  border-bottom: 1px solid var(--link-color-active);
+  transition: border-color 0.4s ease;
+}
+.linkColor {
+  border-bottom: 1px solid var(--link-color);
+
+  &:hover {
+    border-bottom: 1px solid var(--link-color-hover);
+  }
 }

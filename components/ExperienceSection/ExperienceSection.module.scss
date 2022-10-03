@@ -1,9 +1,8 @@
-@use '../../styles/colors';
-
 .date {
   display: flex;
   align-items: center;
   font-size: 14px;
+  color: var(--date-color);
 }
 
 .companyHeader {

@@ -50,7 +50,7 @@ export const ExperienceSection: FC = () => {
 
   return (
     <div className="position-relative">
-      <div className="border-dot border-dot-color"></div>
+      <div className="border-dot"></div>
       <h3>{t('common:experienceHeader')}</h3>
 
       {companies.map((company: companyType, index: number) => (
@@ -64,7 +64,7 @@ const Company: FC<{ company: companyType }> = ({ company }) => {
   return (
     <div>
       <h4 className={styles.companyHeader}>{company.name}</h4>
-      <div className={cn(styles.date, 'date-color')}>
+      <div className={styles.date}>
         <Date dateWithTime={{ date: company.date, time: company.time }} />
       </div>
       <ul>

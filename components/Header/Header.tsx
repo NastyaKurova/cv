@@ -11,14 +11,14 @@ const localeRu = 'ru-Ru'
 export const Header: FC = () => {
   const router = useRouter()
   return (
-    <header className={cn(styles.header, 'header-color')}>
+    <header className={styles.header}>
       <div className={cn('container', styles.container)}>
         <ThemeButton />
         <Link href="/" locale="en-US">
           <a
             className={cn(
               styles.link,
-              router.locale === localeEng ? 'link-active' : 'link-color'
+              router.locale === localeEng ? styles.linkActive : styles.linkColor
             )}>
             Eng
           </a>
@@ -28,7 +28,7 @@ export const Header: FC = () => {
           <a
             className={cn(
               styles.link,
-              router.locale === localeRu ? 'link-active' : 'link-color'
+              router.locale === localeRu ? styles.linkActive : styles.linkColor
             )}>
             Ru
           </a>

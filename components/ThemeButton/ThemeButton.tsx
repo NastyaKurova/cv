@@ -21,7 +21,7 @@ export const ThemeButton: FC = () => {
               type="checkbox"
               onChange={() => onThemeChange(changeTheme)}
             />
-            <span className={cn(styles.slider, 'slider-shadow')}></span>
+            <span className={styles.slider}></span>
           </label>
         )}
       </ThemeContext.Consumer>

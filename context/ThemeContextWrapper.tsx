@@ -11,10 +11,10 @@ const ThemeContextWrapper: FC<{ children: ReactNode }> = ({ children }) => {
   useEffect(() => {
     switch (theme) {
       case themes.dark:
-        return document.body.classList.add('dark-theme')
+        return document.documentElement.setAttribute('theme', 'dark')
       case themes.light:
       default:
-        return document.body.classList.remove('dark-theme')
+        return document.documentElement.removeAttribute('theme')
     }
   }, [theme])
 

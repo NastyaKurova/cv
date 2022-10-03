@@ -1,0 +1,20 @@
+:root[theme='dark'] {
+  --color-gray-05: rgba(168, 162, 118, 0.6);
+  --color-main-dark: #282c35;
+  --color-pink-05: #c9afb7;
+  --color-pink-08: #ffa7c4;
+  --color-wheat: wheat;
+
+  --main-background: var(--color-main-dark);
+  --main-text-color: var(--color-wheat);
+  --color-dot: var(--color-pink-08);
+  --header-color: var(--color-main-dark);
+  --slider-shadow: var(--color-pink-08);
+  --link-color-active: var(--color-wheat);
+  --link-color: var(--color-main-dark);
+  --link-color-hover: var(--color-wheat);
+  --date-color: var(--color-gray-05);
+  --gradient-color-1: var(--color-main-dark);
+  --gradient-color-2: var(--color-pink-05);
+  --gradient-color-3: var(--color-pink-08);
+}
