@@ -1,7 +1,6 @@
 import useTranslation from 'next-translate/useTranslation'
 import { FC } from 'react'
 import styles from './ExperienceSection.module.scss'
-import cn from 'classnames'
 import { Date } from '../common/Date/Date'
 
 type companyType = {
@@ -15,6 +14,20 @@ type companyType = {
 export const ExperienceSection: FC = () => {
   const { t } = useTranslation()
   const companies: companyType[] = [
+    {
+      profession: t('common:workCTProfession'),
+      name: t('common:workCTName'),
+      date: t('common:workCTDate'),
+      time: t('common:workCTTime'),
+      duties: [
+        t('common:workCTDuty1'),
+        t('common:workCTDuty2'),
+        t('common:workCTDuty3'),
+        t('common:workCTDuty4'),
+        t('common:workCTDuty5'),
+        t('common:workCTDuty6'),
+      ],
+    },
     {
       profession: t('common:workKoshelekProfession'),
       name: t('common:workKoshelekName'),
